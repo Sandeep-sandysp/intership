@@ -1,0 +1,35 @@
+/* .alsoliked:hover{
+    margin: 10px;
+    border-radius: 3%;
+    flex-wrap: wrap;
+    text-align: center;
+    cursor: pointer;
+
+} */
+.like:hover{
+    cursor: pointer;
+}
+.like{
+    background-color: bisque;
+    width: 350px;
+    height: 90px;
+    border-radius: 50px;
+    display:flex;
+    line-break: auto;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.image{
+    display:flex;
+    line-break: auto;
+    word-break: break-all;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.content{
+    text-align: center;
+    align-items: center;
+    /* margin: 7px;
+    padding: 20px; */
+
+}

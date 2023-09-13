@@ -1,0 +1,78 @@
+
+.about{
+    padding-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 57vh;
+    width: 50vw;
+    background-image: linear-gradient( 106deg, rgba(59, 51, 51, 0.614) 0%, rgba(231, 193, 193, 0.634) 12%, rgba(231, 187, 187, 0.614) 100% ), url("./logo.jpg");
+    background-size: cover;
+    border-radius: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.aboutProject{
+    margin: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+
+}
+.work{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.tp{
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 0%;
+    color: #212529;
+    
+}
+.list{
+    margin: 2%;
+    font-weight: bolder;
+}
+.home{
+    text-align: right;
+    margin: 3%;
+    cursor: pointer;
+    
+}
+.home:hover{
+    text-decoration: underline;
+    color:red;
+}
+.background{
+    background-color:aliceblue;
+    height: 100vh;
+    width: 100vw;
+}
+
+.svada{
+    font-family: var(--bs-font-sans-serif);
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #277bcf;
+}
+
+.add-first{
+    color: #af2929;
+    font-size: 0.85rem;
+    margin-left: 15px;
+}
