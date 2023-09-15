@@ -1,28 +1,36 @@
-.cardtop{
-    background-color: beige;
-    color: purple;
-    border-radius: 2ch;
-    margin: 20px;
-    padding: 20px;
-    display: inline-block;
-    cursor: pointer;
-    word-wrap: break-word;
-    line-break: auto;
-    word-break: normal;
-    width:240px;
-    height: 300px;
-    align-items: center;
-    /* word-wrap: break-word; */
+.cardtop {
+  background-color: beige;
+  color: purple;
+  border-radius: 10px;
+  margin: 20px;
+  /* padding: 20px; */
+  display: inline-block;
+  cursor: pointer;
+  word-wrap: break-word;
+  line-break: auto;
+  word-break: normal;
+  width: 20%;
+  /* height: 300px; */
+  align-items: center;
+  /* word-wrap: break-word; */
+  overflow: hidden;
 }
-.carddesign{
-    border-radius: 2ch;
+.items-list {
+  display: flex;
+  width: 100%;
+  /* justify-content: space-between; */
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.h4{
-    display: flex;
-    flex-wrap: wrap;
-    line-break: auto;
-    word-break: break-all;
-    word-wrap: break-word;
-    padding-bottom: 0%;
-    margin-bottom: auto;
+.carddesign {
+  border-radius: 2ch;
+}
+.h4 {
+  display: flex;
+  flex-wrap: wrap;
+  line-break: auto;
+  word-break: break-all;
+  word-wrap: break-word;
+  padding-bottom: 0%;
+  margin-bottom: auto;
 }

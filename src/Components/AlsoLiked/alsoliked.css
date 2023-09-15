@@ -1,11 +1,4 @@
-/* .alsoliked:hover{
-    margin: 10px;
-    border-radius: 3%;
-    flex-wrap: wrap;
-    text-align: center;
-    cursor: pointer;
 
-} */
 .like:hover{
     cursor: pointer;
 }
@@ -27,9 +20,7 @@
     word-break: break-word;
 }
 .content{
-    text-align: center;
-    align-items: center;
-    /* margin: 7px;
-    padding: 20px; */
+
+    padding: 30px; 
 
 }

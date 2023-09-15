@@ -1,77 +1,90 @@
-*{
-    margin: 20px;
-    padding: 20px;
-}
+
 .h3{
-    margin: 20px;
-    padding: 45px;
-    
+  margin: 20px;
+  padding: 45px;
+  
 }
 
 .menu{
-  margin: 40px;
-  padding: 4px;
-  
+margin: 40px;
+padding: 4px;
+
 }
 
-.fill{
-  margin: 40px;
-  padding: 4px;
-}
+
 .filters{
-         display: flex;
-         flex-wrap: wrap;
-         padding: 0%;
-         margin: 0%;
-         width: 100%;
-         cursor: pointer;   
+       display: flex;
+       flex-wrap: wrap;
+       padding: 0%;
+       margin: 0%;
+       width: 100%;
+       cursor: pointer;   
 }
 .listcontents h4 {
-    display: inline-block;
-    margin-right: 10px;
-    background-color:lightgreen;
-    border-radius: 4ch;
-    padding: 5px;
-    margin-left: 1px;
-    margin-top: 100px;
-    width: 130px;
-    align-items: center;
-    text-align: center;
-    transition: 0.3s;
-    opacity: 6;
-  }
-  .listcontents :hover{
-    opacity: 0.6;
-    background-color: rgb(236, 168, 21);
-    
-  }
-  h4.abt:hover{
-    text-decoration:solid;
-    color: rgb(226, 11, 11);
-    opacity: 1;
-  }
-  .navbar{
-    background-color: #053b51;
-    height: 45px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
+  display: inline-block;
+
+  background-color:lightgreen;
+  border-radius: 4ch;
+  padding: 10px;
+  margin: 0px 20px;
+  width: 100px;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+  opacity: 6;
+}
+.listcontents :{
+  opacity: 0.9;
+  background-color: rgb(255, 255, 255);
+  border:1px solid #042b3b;
+  color:#01080b;
+  
+}
+.selected{
+  opacity: 0.9;
+  background-color: rgb(255, 255, 255);
+  border:1px solid #042b3b;
+  color:#01080b;
+}
+h4.abt:hover{
+  text-decoration:solid;
+  color: rgb(226, 11, 11);
+  opacity: 1;
+}
+.navbar{
+  background-color: #053b51;
+
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar {
-    position: relative;
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-    color: #f1981c;
-    text-shadow: #80A25E 1px 0 10px;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  
+  color: #f1981c;
+ 
 
 }
-  
+.title{
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  color: #f1981c;
+}
+.abt{
+  margin-right: 10px;
+  cursor: pointer;
+  color: #f1981c;
+}
 
-  
+.main-container{
+  padding: 0px 20px;
+}
+

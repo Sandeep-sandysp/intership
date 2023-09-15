@@ -6,6 +6,7 @@ import YouTube from "../YouTube/YouTube";
 import AlsoLiked from "../AlsoLiked/AlsoLiked";
 import Ingrediant from "../Ingrediant/Ingrediant";
 import Preparation from "../Preparation/Preparation";
+import Header from "../Layouts/Header";
 
 function MenuItem(props) {
   const { id } = useParams();
@@ -99,18 +100,19 @@ function MenuItem(props) {
 
   return (
     <>
-      <div style={{padding:"20px"}}>
+    <Header />
+      <div style={{width:'99%', margin:'10px'}}>
         <div className="top">
           <div className="same">
-            <div>
-              <h1 style={{ textAlign: "left", padding:"10px" }}>
+            <div className="video">
+              <h1 classname="video-header">
                 {mealSelected?.strMeal ? mealSelected.strMeal : " "}
               </h1>
               <YouTube youTubeId={mealSelected?.strYoutube.split("=")[1]} />
             </div>
 
             <div className="also">
-              <h2>Also Liked</h2>
+              <h1>Also Liked</h1>
               {alsoLiked !== null ? (
                 alsoLiked.map((eachElement) => (
                   
@@ -121,11 +123,9 @@ function MenuItem(props) {
               )}
             </div>
           </div>
-           
-          <div style={{marginLeft:"-10px"}}>
+          <h2>Ingrediants</h2>
             <div className="ingred">
-              <h2>Ingrediant</h2>
-              <div>
+              
                 {ingrediants.map(
                   (eachObject, index) =>
                     eachObject[`strIngredient${index + 1}`] &&
@@ -137,7 +137,6 @@ function MenuItem(props) {
                       />
                     )
                 )}
-              </div>
             </div>
 
             <div className="prepa">
@@ -150,7 +149,6 @@ function MenuItem(props) {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

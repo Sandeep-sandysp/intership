@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import MenuCard from "../MenuCard/MenuCard";
 import { useNavigate } from "react-router-dom";
 import "./menu.css";
+import Header from "../Layouts/Header";
 
 function Menu() {
   const [breakfastData, setBreakfastData] = useState([]);
@@ -79,10 +80,7 @@ function Menu() {
     return navigate(`/MenuItem/${idMeal}`);
   };
 
-  const aboutClicked = () => {
-    return navigate(`/About`);
-  };
-
+  
   const handleFilterClick = (value) => {
     setFilterSelection(value);
   };
@@ -90,39 +88,24 @@ function Menu() {
   return (
     <>
       <div>
-        <div className="menutop">
-          <nav className="navbar">
-            <h1
-              style={{ textAlign: "center", position: "relative", left: "45%" }}
-            >
-              SVADA
-            </h1>
-            <h4
-              className="abt"
-              style={{ textAlign: "left", cursor: "pointer", right: "0" }}
-              onClick={() => aboutClicked()}
-            >About </h4>
-           
-            {/* <About
-      onAboutClick={aboutClicked} 
-      /> */}
-          </nav>
-        </div>
-        <div className="filters">
+        <Header />
+        <div class="main-container"> 
+        <div className="itemsmenu">
           <div className="fill"><h2>Filters:</h2></div>
           <div className="listcontents">
-            <h4 onClick={() => handleFilterClick(FilterSelectionConstants)}>All</h4>
-            <h4 onClick={() => handleFilterClick(["Breakfast"])}>Breakfast</h4>
-            <h4 onClick={() => handleFilterClick(["Chicken"])}>Chicken</h4>
-            <h4 onClick={() => handleFilterClick(["Pasta"])}>Pasta</h4>
-            <h4 onClick={() => handleFilterClick(["Seafood"])}>Seafood</h4>
-            <h4 onClick={() => handleFilterClick(["Dessert"])}>Dessert</h4>
-            <h4 onClick={() => handleFilterClick(["Vegetarian"])}>Vegetarian</h4>
+            <h4 style={{cursor:'pointer',}} onClick={() => handleFilterClick(FilterSelectionConstants)}>All</h4>
+            <h4 style={{cursor:'pointer'}} onClick={() => handleFilterClick(["Breakfast"])}>Breakfast</h4>
+            <h4 style={{cursor:'pointer'}} onClick={() => handleFilterClick(["Chicken"])}>Chicken</h4>
+            <h4 style={{cursor:'pointer'}} onClick={() => handleFilterClick(["Pasta"])}>Pasta</h4>
+            <h4 style={{cursor:'pointer'}} onClick={() => handleFilterClick(["Seafood"])}>Seafood</h4>
+            <h4 style={{cursor:'pointer'}} onClick={() => handleFilterClick(["Dessert"])}>Dessert</h4>
+            <h4 style={{cursor:'pointer'}} onClick={() => handleFilterClick(["Vegetarian"])}>Vegetarian</h4>
           </div>
         </div>
 <div className="itemsmenu">
-        {filterSelection.includes("Breakfast") && <div className="menu"><h3>Breakfast</h3>
-          </div>}
+        {filterSelection.includes("Breakfast") && 
+          <div className="fill"><h2>Breakfast:</h2></div>}
+          <div className="items-list">
         {filterSelection.includes("Breakfast") &&
           breakfastData.map((item, index) => (
             <MenuCard
@@ -132,10 +115,11 @@ function Menu() {
               strMealThumb={item.strMealThumb}
               onCardClick={cardClicked}
             />
-          ))}
+          ))}</div>
 
-{filterSelection.includes("Chicken") && <div className="menu"><h3>Chicken</h3>
+{filterSelection.includes("Chicken") && <div className="fill"><h2>Chicken:</h2>
           </div>}
+          <div className="items-list">
 {filterSelection.includes("Chicken") &&
           chickenData.map(function (item, index) {
             return (
@@ -147,10 +131,11 @@ function Menu() {
                 onCardClick={cardClicked}
               />
             );
-          })}
+          })}</div>
 
-{filterSelection.includes("Pasta") && <div className="menu"><h3>Pasta</h3>
+{filterSelection.includes("Pasta") && <div className="fill"><h2>Pasta:</h2>
           </div>}
+          <div className="items-list">
 {filterSelection.includes("Pasta") &&  
           pastaData.map(function (item, index) {
             return (
@@ -162,10 +147,11 @@ function Menu() {
                 onCardClick={cardClicked}
               />
             );
-          })}
+          })}</div>
 
-{filterSelection.includes("Seafood") && <div className="menu"><h3>SeaFood</h3>
+{filterSelection.includes("Seafood") && <div className="fill"><h2>SeaFood:</h2>
           </div>}
+          <div className="items-list">
 {filterSelection.includes("Seafood") && 
           seafoodData.map(function (item, index) {
             return (
@@ -177,10 +163,11 @@ function Menu() {
                 onCardClick={cardClicked}
               />
             );
-          })}
+          })}</div>
 
-{filterSelection.includes("Dessert") &&  <div className="menu"><h3>Dessert</h3>
+{filterSelection.includes("Dessert") &&  <div className="fill"><h2>Dessert:</h2>
           </div>}
+          <div className="items-list">
 {filterSelection.includes("Dessert") &&
           desertData.map(function (item, index) {
             return (
@@ -192,10 +179,11 @@ function Menu() {
                 onCardClick={cardClicked}
               />
             );
-          })}
+          })}</div>
 
-{filterSelection.includes("Vegetarian") &&<div className="menu"><h3>Vegetarian</h3>
+{filterSelection.includes("Vegetarian") &&<div className="fill"><h2>Vegetarian:</h2>
           </div>}
+          <div className="items-list">
 {filterSelection.includes("Vegetarian") &&
           vegetarianData.map(function (item, index) {
             return (
@@ -207,7 +195,8 @@ function Menu() {
                 onCardClick={cardClicked}
               />
             );
-          })}
+          })}</div>
+          </div>
           </div>
       </div>
     </>

@@ -1,5 +1,5 @@
 import './alsoliked.css'
-function AlsoLiked(props) {
+const  AlsoLiked = (props) =>{
     console.log("props", props);
     return (
       <>
@@ -16,8 +16,7 @@ function AlsoLiked(props) {
                 src={props.data.strMealThumb}
                 width="90"
                 height="90"
-                style={{ borderRadius: "50%", position:"relative",
-                bottom:'9px', right:'9px' }}
+                style={{ borderRadius: "50%", position:"relative" }}
                 alt="nothing to display"
                 
 

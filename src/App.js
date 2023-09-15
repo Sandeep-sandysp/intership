@@ -17,7 +17,7 @@ function App() {
         <Route path="/" exact element={<Menu/>} />
         <Route path="/MenuItem/:id" element={<MenuItem/>} />
         <Route path="/About" element={<About/>}/> 
-        <Route path="/PageNotFound" element={<PageNotFound/>}/> 
+        <Route path="/*" element={<PageNotFound/>}/> 
       </Routes>
     </Router>
     </div>
