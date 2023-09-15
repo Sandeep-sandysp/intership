@@ -4,8 +4,8 @@ function Ingrediant(props) {
     return (
       <>
         <div className="quality">
-          <h5>{props.measure}</h5>
-          <h4>{props.ingrediant}</h4>
+          <h6 style={{textAlign:'center'}}>{props.measure}</h6>
+          <h5 style={{textAlign:'center'}}>{props.ingrediant}</h5>
         </div>
       </>
     );

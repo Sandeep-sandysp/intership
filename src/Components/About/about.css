@@ -10,11 +10,8 @@
     background-image: linear-gradient( 106deg, rgba(59, 51, 51, 0.614) 0%, rgba(231, 193, 193, 0.634) 12%, rgba(231, 187, 187, 0.614) 100% ), url("./logo.jpg");
     background-size: cover;
     border-radius: 25px;
-    margin-right: auto;
-    margin-left: auto;
 }
 .aboutProject{
-    margin: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +22,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 5%;
 
 }
 .work{
@@ -34,6 +30,7 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
+    margin-top: 3rem;
 }
 .tp{
     font-family: var(--bs-font-sans-serif);
@@ -66,8 +63,7 @@
 .svada{
     font-family: var(--bs-font-sans-serif);
     font-size: 5rem;
-    font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.2;
     color: #277bcf;
 }
 
